@@ -37,6 +37,10 @@
             <artifactId>org.wso2.carbon.business.messaging.core</artifactId>
         </dependency>
         <dependency>
+            <groupId>org.wso2.carbon.business.messaging</groupId>
+            <artifactId>org.wso2.carbon.business.messaging.transport.amqp</artifactId>
+        </dependency>
+        <dependency>
             <groupId>org.wso2.andes.wso2</groupId>
             <artifactId>andes</artifactId>
         </dependency>
@@ -301,7 +305,11 @@
                             <bundles>
                                 <bundle>
                                     <symbolicName>org.wso2.carbon.business.messaging.core</symbolicName>
-                                    <version>${carbon.business.messaging.version}</version>
+                                    <version>${project.version}</version>
+                                </bundle>
+                                <bundle>
+                                    <symbolicName>org.wso2.carbon.business.messaging.transport.amqp</symbolicName>
+                                    <version>${project.version}</version>
                                 </bundle>
                                 <bundle>
                                     <symbolicName>andes</symbolicName>

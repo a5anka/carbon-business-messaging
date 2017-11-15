@@ -69,8 +69,14 @@
             <dependency>
                 <groupId>org.wso2.carbon.business.messaging</groupId>
                 <artifactId>org.wso2.carbon.business.messaging.core</artifactId>
-                <version>${carbon.business.messaging.version}</version>
+                <version>${project.version}</version>
             </dependency>
+            <dependency>
+                <groupId>org.wso2.carbon.business.messaging</groupId>
+                <artifactId>org.wso2.carbon.business.messaging.transport.amqp</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
 
             <!-- Bare essential dependencies required to create a carbon component -->
             <dependency>
@@ -486,7 +492,6 @@
     </build>
 
     <properties>
-        <carbon.business.messaging.version>4.0.7</carbon.business.messaging.version>
         <carbon.feature.plugin.version>3.1.1</carbon.feature.plugin.version>
 
         <!-- C5 specific dependency versions -->
@@ -548,7 +553,6 @@
         <msf4j.version>2.2.2</msf4j.version>
         <msf4j.import.version.range>[2.0.0, 3.0.0)</msf4j.import.version.range>
 
-        <carbon.business.messaging.version.range>[4.0.0, 5.0.0)</carbon.business.messaging.version.range>
         <osgi.framework.import.version.range>[1.8.0, 2.0.0)</osgi.framework.import.version.range>
         <io.swagger.annotations.version.range>[1.5.0, 1.6.0)</io.swagger.annotations.version.range>
         <slf4j.import.version.range>[1.7.1, 2.0.0)</slf4j.import.version.range>
