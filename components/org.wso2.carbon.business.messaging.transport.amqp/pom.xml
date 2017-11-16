@@ -38,6 +38,10 @@
 
     <dependencies>
         <dependency>
+            <groupId>org.wso2.carbon.business.messaging</groupId>
+            <artifactId>org.wso2.carbon.business.messaging.core</artifactId>
+        </dependency>
+        <dependency>
             <groupId>org.wso2.eclipse.osgi</groupId>
             <artifactId>org.eclipse.osgi</artifactId>
         </dependency>
@@ -59,7 +63,8 @@
         </export.package>
         <import.package>
             org.osgi.framework;version="${osgi.framework.import.version.range}",
-            org.slf4j;version="${slf4j.import.version.range}"
+            org.slf4j;version="${slf4j.import.version.range}",
+            org.wso2.carbon.business.messaging.core.service;version=${project.version}
         </import.package>
         <carbon.component>
         </carbon.component>
