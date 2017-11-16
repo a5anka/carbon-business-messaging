@@ -53,18 +53,23 @@
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>
         </dependency>
+        <dependency>
+            <groupId>io.netty</groupId>
+            <artifactId>netty-transport</artifactId>
+        </dependency>
     </dependencies>
 
     <properties>
         <private.package>
-            org.wso2.carbon.business.messaging.transport.amqp
+            org.wso2.carbon.business.messaging.transport.amqp.internal.*
         </private.package>
         <export.package>
         </export.package>
         <import.package>
             org.osgi.framework;version="${osgi.framework.import.version.range}",
             org.slf4j;version="${slf4j.import.version.range}",
-            org.wso2.carbon.business.messaging.core.service;version=${project.version}
+            org.wso2.carbon.business.messaging.core.service;version=${project.version},
+            io.netty.*;version="${netty.package.import.version.range}",
         </import.package>
         <carbon.component>
         </carbon.component>

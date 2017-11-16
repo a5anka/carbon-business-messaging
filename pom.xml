@@ -211,13 +211,8 @@
                 <version>${axis2.transport.rabbitmq.amqp.version}</version>
             </dependency>
             <dependency>
-                <groupId>io.netty.wso2</groupId>
-                <artifactId>netty-all</artifactId>
-                <version>${netty-all.version}</version>
-            </dependency>
-            <dependency>
                 <groupId>io.netty</groupId>
-                <artifactId>netty</artifactId>
+                <artifactId>netty-transport</artifactId>
                 <version>${netty.version}</version>
             </dependency>
             <dependency>
@@ -539,7 +534,6 @@
         <commons-cli.wso2.version>1.2.0.wso2v1</commons-cli.wso2.version>
         <axis2.transport.rabbitmq.amqp.version>1.1.1-wso2v2</axis2.transport.rabbitmq.amqp.version>
         <axis2.transport.jms.version>1.1.1-wso2v2</axis2.transport.jms.version>
-        <netty-all.version>4.0.23.wso2v1</netty-all.version>
         <orbit.version.h2.engine>1.2.140.wso2v3</orbit.version.h2.engine>
         <orbit.version.xmlschema>1.4.7.wso2v2</orbit.version.xmlschema>
         <org.wso2.securevault.version>5.0.8</org.wso2.securevault.version>
@@ -549,6 +543,7 @@
         <testng.version>6.3.1</testng.version>
         <carbon.config.version>2.1.2</carbon.config.version>
         <carbon.metrics.version>2.3.2</carbon.metrics.version>
+        <netty.version>4.1.17.Final</netty.version>
 
         <msf4j.version>2.2.2</msf4j.version>
         <msf4j.import.version.range>[2.0.0, 3.0.0)</msf4j.import.version.range>
@@ -556,6 +551,7 @@
         <osgi.framework.import.version.range>[1.8.0, 2.0.0)</osgi.framework.import.version.range>
         <io.swagger.annotations.version.range>[1.5.0, 1.6.0)</io.swagger.annotations.version.range>
         <slf4j.import.version.range>[1.7.1, 2.0.0)</slf4j.import.version.range>
+        <netty.package.import.version.range>[4.1.0,4.2.0)</netty.package.import.version.range>
     </properties>
 
   <modules>

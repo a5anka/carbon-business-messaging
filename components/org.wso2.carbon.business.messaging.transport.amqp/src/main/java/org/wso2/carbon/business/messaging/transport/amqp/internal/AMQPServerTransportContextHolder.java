@@ -1,4 +1,4 @@
-package org.wso2.carbon.business.messaging.transport.amqp;
+package org.wso2.carbon.business.messaging.transport.amqp.internal;
 
 import org.wso2.carbon.business.messaging.core.service.BrokerService;
 
